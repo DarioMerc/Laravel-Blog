@@ -24,6 +24,11 @@
 
         <button class="bg-blue-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Update</button>
         <a href="/posts" class="bg-gray-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Cancel</a>
+        <form action="/posts/{{$post->id}}/delete">
+            @csrf
+            @method('DELETE')
+            <button class="bg-red-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Delete</button>
+        </form>
     </form>
     </div>
 </body>
