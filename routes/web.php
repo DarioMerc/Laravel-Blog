@@ -24,22 +24,6 @@ Auth::routes();
 
 Route::get('/home',[HomeController::class,'index'])->name('home');
 
-
-
-// //get posts
-// Route::get('/posts',[PostsController::class,'index']);
-// //create posts
-// Route::get('/posts/create',[PostsController::class,'create']);
-// Route::post('/posts',[PostsController::class,'store']);
-// //edit post
-// Route::get('/posts/{post}/edit',[PostsController::class,'edit']);
-// Route::put('/posts/{post}',[PostsController::class,'update']);
-// //delete
-// Route::delete('/posts/{post}',[PostsController::class,'delete']);
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');Auth::routes();
-
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
