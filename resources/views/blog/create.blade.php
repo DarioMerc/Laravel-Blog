@@ -36,14 +36,14 @@
                 class="bg-transparent block my-5 border-2 w-full h-20 text-xl outline-none"></textarea>
 
             <div class="bg-grey-lighter pt-5">
-                <label class="w-44 flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
-                    <span class="mt-2 text-base leading-normal">
-                        Select a file
+                <label class="w-2/5 flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
+                    <span class="text-base leading-normal">
+                        Image Upload:
                     </span>
                     <input 
-                        type="file"
-                        name="image"
-                        class="hidden">
+                    type="file"
+                    name="image"
+                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
                 </label>
             </div>
 

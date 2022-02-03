@@ -46,8 +46,7 @@ class PostsController extends Controller
             'content'=>'required',
             'image'=>'required|mimes:jpg,png,jpeg|max:5048']);
 
-        $newImageName = uniqid() . '-' . $request->title . '.' .
-        $request->image->extension();
+        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
 
         $request->image->move(public_path('images'), $newImageName);
 
@@ -59,7 +58,9 @@ class PostsController extends Controller
             'user_id' => auth()->user()->id
         ]);
 
-        return redirect('/blog')->with('message','Your post has been added!');
+        return redirect('/blog')
+            ->with('message','Your post has been added!')
+            ->with('image',$newImageName);
     }
 
     /**
